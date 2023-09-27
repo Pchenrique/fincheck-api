@@ -16,7 +16,7 @@ model User {
   email         String         @unique
   password      String
   banckAccounts BanckAccount[]
-  Categories    Category[]
+  categories    Category[]
   transactions  Transaction[]
 
   @@map("users")
@@ -46,7 +46,7 @@ model BanckAccount {
 
 enum TransactionType {
   INCOME
-  EXPRENSE
+  EXPENSE
 
   @@map("transaction_type")
 }
