@@ -3,7 +3,6 @@ import { CreateBankAccountDto } from '../dto/create-bank-account.dto';
 import { UpdateBankAccountDto } from '../dto/update-bank-account.dto';
 import { BankAccountsRepository } from 'src/shared/database/repositories/bank-accounts.repositories';
 import { ValidateBankAccountOwenershipService } from './validate-bank-account-ownership.service';
-import { type } from 'os';
 
 @Injectable()
 export class BankAccountsService {
